@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dré Manga List - List</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/base/base.css">
+    <link rel="stylesheet" href="../assets/css/list.css">
+    <link rel="stylesheet" href="../assets/css/components/header.css">
+    <link rel="stylesheet" href="../assets/css/components/table.css">
+    <link rel="stylesheet" href="../assets/css/components/button.css">
+</head>
+<body>
+    <header class="header container flex">
+        <nav>
+            <ul class="header__list-navbar">
+                <li class="header__link"><a href="./list.html">List</a></li>
+                <li class="header__link"><a href="./addNew.html">Add</a></li>
+                <li>
+                    <input class="header__input-search" name="search" type="text" placeholder="Search..." data-search>
+                </li>
+            </ul>
+               
+        </nav>
+    </header>
+    <main class="list-container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="table__column">Name</th>
+                    <th class="table__column">Status</th> 
+                    <th class="table__column">EN</th>
+                    <th class="table__column">PT-BR</th>
+                    <th class="table__column">Update</th>
+                    <th class="table__column">Delete</th>  
+                </tr>
+            </thead>
+            <tbody data-table>
+                <tr>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <script type="module" src="../controller/list-controller.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dre Manga List - Update</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/base/base.css">
+    <link rel="stylesheet" href="../assets/css/update.css">
+    <link rel="stylesheet" href="../assets/css/components/header.css">
+    <link rel="stylesheet" href="../assets/css/components/table.css">
+    <link rel="stylesheet" href="../assets//css/components/card.css">
+    <link rel="stylesheet" href="../assets/css/components/inputs.css">
+    <link rel="stylesheet" href="../assets/css/components/button.css">
+</head>
+<body>
+    <header class="header container flex">
+        <nav>
+            <ul class="header__list-navbar">
+                <li class="header__link"><a href="./list.html">List</a></li>
+                <li class="header__link"><a href="./addNew.html">Add</a></li>
+            </ul>       
+        </nav>
+    </header>
+    <main class="container flex flex--center flex--column">
+        <section class="card add">
+            <h1 class="card__title">Update a existent Manga</h1>
+            <form class="flex flex--column" data-form>
+                <div class="input-container">
+                    <label class="input-label" for="input-name">Name</label>
+                    <input class="input" name="input-name" id="name" type="text" data-name required>
+                </div>
+                <div class="input-container">
+                    <label class="input-label" for="input-status">Status</label>
+                    <input class="input" name="input-status" id="status" type="text" data-status required>
+                </div>
+                <div class="input-container">
+                    <label class="input-label" for="input-EN">EN Caps</label>
+                    <input class="input"  name="input-EN" id="EN" type="number" data-en required>
+                </div>
+                <div class="input-container">
+                    <label class="input-label" for="input-PTBR">PT-BR Caps</label>
+                    <input class="input" name="input-PTBR" id="PTBR" type="number" data-ptbr required>
+                </div>
+                
+                <button class="button" type="submit">Update Manga</button>
+            </form>
+        </section>
+    </main>
+    <script type="module" src="../controller/update-controller.js"></script>
+</body>
+</html>

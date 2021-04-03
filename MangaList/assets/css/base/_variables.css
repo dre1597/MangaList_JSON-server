@@ -1,0 +1,17 @@
+:root {
+    --family-font-main: 'Pangolin', cursive;
+
+    --weight-font-input: 400;
+
+    --big-font: 3rem;
+    --extra-medium-font: 2rem;
+    --medium-font: 1.5rem;
+
+    --color-background: rgb(109, 108, 108);
+    --color-header: rgb(70, 70, 70);
+    --color-header-hover: rgb(40, 7, 116);
+    --color-things: rgb(86, 60, 128);
+    --color-button: rgb(24, 106, 45);
+    --color-text-button: black;
+    --color-search: lightgrey;
+}
