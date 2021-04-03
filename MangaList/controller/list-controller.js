@@ -53,6 +53,7 @@ table.addEventListener('click', async (event) => {
 
     }
 })
+
 const render = async () => {
 
     try{
