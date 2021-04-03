@@ -1,0 +1,115 @@
+.header {
+  font-family: "Pangolin", cursive;
+  background-color: #610056;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #dedede;
+}
+.header .nav__list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: space-between;
+}
+.header .nav__links {
+  margin: 20px 20px;
+}
+.header__input {
+  height: 40px;
+  background: #dedede;
+  color: #610056;
+  margin-right: 20px;
+}
+
+body {
+  background-color: #ccc;
+}
+
+.main {
+  background-color: #C9BEE0;
+  width: 90%;
+  margin: 20px auto 0 auto;
+}
+.main__table {
+  color: #610056;
+  width: 100%;
+}
+.main__table--label {
+  border: 2px solid #610056;
+  font-size: 25px;
+  line-height: 1.5;
+}
+.main__table--row, .main__table--row-info {
+  text-align: center;
+}
+.main__table--data {
+  border: 2px solid #610056;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.section {
+  width: 90%;
+  margin: 20px auto 0 auto;
+  color: #610056;
+  border: 2px solid #610056;
+  background-color: #C9BEE0;
+  max-width: 700px;
+}
+.section__title {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 36px;
+}
+.section .form {
+  margin-top: 20px;
+}
+.section .form__fieldset {
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.section .form__label {
+  font-size: 24px;
+}
+.section .form__input {
+  padding: 10px;
+  color: #610056;
+  font-size: 24px;
+  margin: 10px 0 10px 0;
+  width: 80%;
+}
+.section .form__btn {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.section .form__btn--submit {
+  border: 2px solid transparent;
+  background-color: #610056;
+  color: #C9BEE0;
+  width: 50%;
+  height: 50px;
+  transition: 1s;
+  font-size: 24px;
+}
+.section .form__btn--submit:hover {
+  background-color: purple;
+}
+
+.error {
+  text-align: center;
+  font-size: 30px;
+  margin: 20px;
+  color: #610056;
+}
+.error h1 {
+  margin-bottom: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

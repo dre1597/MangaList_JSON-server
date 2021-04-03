@@ -17,5 +17,4 @@ table.addEventListener('click', async (event) => {
     else if(type == 'ptbr') newPtbr ++
 
     await listService.updateManga(id, data.mangaName, data.status, newEn, newPtbr)
-
 })

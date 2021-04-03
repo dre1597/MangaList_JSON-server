@@ -3,29 +3,19 @@ import { listService } from '../service/list-service.js'
 export const createNewLine = (mangaName, status, en, ptbr, id) => {
 
     const newLine = document.createElement('tr')
-    newLine.classList.add('tr-info')
+    newLine.classList.add('main__table--row-info')
 
     const content = `
-        <td class="manga-name">${mangaName}</td>
-        <td>${status}</td>
-        <td>
-            <ul class="flex">
-                <li class="info-item">${en}</li>
-                <li class="button__li"><button name="en-${id}" id="btn-plusone-en-${id}" class="button__plusone button__plusone-en" >+1</button></li>
-            </ul> 
-        </td>
-        <td>
-            <ul class="flex">
-                <li class="info-item">${ptbr}</li>
-                <li class="button__li"><button name="ptbr-${id}" id="btn-plusone-ptbr-${id}" class="button__plusone button__plusone-ptbr" ">+1</button></li>
-            </ul>  
-        </td>
-        <td>
+        <td class="main__table--data manga-name">${mangaName}</td>
+        <td class="main__table--data">${status}</td>
+        <td class="main__table--data">${en}</td>
+        <td class="main__table--data">${ptbr}</td>
+        <td class="main__table--data">
             <ul>
                 <li><a href="../views/update.html?id=${id}">Update</a></li>
             </ul>
         </td>
-        <td>
+        <td class="main__table--data">
             <ul>
                 <li><button class="button__delete" type="button" data-delete>Delete</button></li>
             </ul>
@@ -68,8 +58,8 @@ const render = async () => {
         })
     }
     catch(err){
-        console.log(err)
         window.location.href = "../views/error.html"
+        console.log(err)
     }
     
 }
