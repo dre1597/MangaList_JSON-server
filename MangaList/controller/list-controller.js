@@ -3,18 +3,20 @@ import { listService } from '../service/list-service.js'
 export const createNewLine = (mangaName, status, en, ptbr, id) => {
 
     const newLine = document.createElement('tr')
+    newLine.classList.add('tr-info')
+
     const content = `
-        <td>${mangaName}</td>
+        <td class="manga-name">${mangaName}</td>
         <td>${status}</td>
         <td>
             <ul class="flex">
-                <li>${en}</li>
+                <li class="info-item">${en}</li>
                 <li class="button__li"><button name="en-${id}" id="btn-plusone-en-${id}" class="button__plusone button__plusone-en" >+1</button></li>
             </ul> 
         </td>
         <td>
             <ul class="flex">
-                <li>${ptbr}</li>
+                <li class="info-item">${ptbr}</li>
                 <li class="button__li"><button name="ptbr-${id}" id="btn-plusone-ptbr-${id}" class="button__plusone button__plusone-ptbr" ">+1</button></li>
             </ul>  
         </td>
@@ -29,6 +31,7 @@ export const createNewLine = (mangaName, status, en, ptbr, id) => {
             </ul>
         </td>
     `
+    
     newLine.innerHTML = content
     newLine.dataset.id = id
     return newLine

@@ -11,15 +11,29 @@
       "mangaName": "The red king",
       "status": "Ongoing",
       "en": "111",
-      "ptbr": "111",
+      "ptbr": 113,
       "id": 4
     },
     {
       "mangaName": "test",
       "status": "11",
       "en": 12,
-      "ptbr": 112,
+      "ptbr": 116,
       "id": 5
+    },
+    {
+      "mangaName": "Solo Leveling",
+      "status": "ok",
+      "en": 12,
+      "ptbr": "11",
+      "id": 6
+    },
+    {
+      "mangaName": "The Descent of ",
+      "status": "Ongoing",
+      "en": 112,
+      "ptbr": 112,
+      "id": 7
     }
   ]
 }
