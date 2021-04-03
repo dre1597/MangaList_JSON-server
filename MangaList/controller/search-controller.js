@@ -11,10 +11,28 @@ searchArea.addEventListener('keyup', async (event) => {
 
     const data = await listService.mangaList()
 
-    const filtered = data.filter( element => element.mangaName.toLowerCase().includes(text))
+    const FilterPlusFor = () =>{
 
-    filtered.forEach(element => {
-        table.appendChild(createNewLine(element.mangaName, element.status, element.en, element.ptbr, element.id))
-    })
+        var saveNames = []
+
+        const filtered = data.filter( element => {
+
+            const name = element.mangaName.toLowerCase()
     
+            if(saveNames.includes(name))
+                return false
+    
+            saveNames.push(name)
+            
+            return name.includes(text)
+    
+        })
+    
+        filtered.forEach(element => {
+            
+            table.appendChild(createNewLine(element.mangaName, element.status, element.en, element.ptbr, element.id))
+        })
+    }
+
+    FilterPlusFor()
 })

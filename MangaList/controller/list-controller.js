@@ -1,6 +1,7 @@
 import { listService } from '../service/list-service.js'
 
 export const createNewLine = (mangaName, status, en, ptbr, id) => {
+
     const newLine = document.createElement('tr')
     const content = `
         <td>${mangaName}</td>
@@ -8,13 +9,13 @@ export const createNewLine = (mangaName, status, en, ptbr, id) => {
         <td>
             <ul class="flex">
                 <li>${en}</li>
-                <li class="button__li"><button class="button__plusone" data-plusone>+1</button></li>
+                <li class="button__li"><button name="en-${id}" id="btn-plusone-en-${id}" class="button__plusone button__plusone-en" >+1</button></li>
             </ul> 
         </td>
         <td>
             <ul class="flex">
                 <li>${ptbr}</li>
-                <li class="button__li"><button class="button__plusone" data-plusone>+1</button></li>
+                <li class="button__li"><button name="ptbr-${id}" id="btn-plusone-ptbr-${id}" class="button__plusone button__plusone-ptbr" ">+1</button></li>
             </ul>  
         </td>
         <td>
