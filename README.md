@@ -1,7 +1,7 @@
 # MangaList_JSON-server
-<h1>Basic CRUD with a search and using JSON server.</h1>
+<h1>Basic CRUD with a search using JSON server.</h1>
 
-<p>At the start the JS part was based on a course form Alura called "JS na web: CRUD com JavaScript assíncrono".</p>
+<p>The JS part was based on a course form Alura called "JS na web: CRUD com JavaScript assíncrono".</p>
 <p>https://cursos.alura.com.br/course/javascript-crud-assincrono</p><br>
 
 <p>The ideia of the project is to improve my mangalist that I already have using excel and learn/exercise some basic CRUD on JS.</p><br>
