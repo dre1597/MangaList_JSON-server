@@ -12,12 +12,12 @@ export const createNewLine = (mangaName, status, en, ptbr, id) => {
         <td class="main__table--data">${ptbr}</td>
         <td class="main__table--data">
             <ul>
-                <li><a href="../views/update.html?id=${id}">Update</a></li>
+                <li><a href="../views/update.html?id=${id}"><i class="fas fa-edit"></i></a></li>
             </ul>
         </td>
         <td class="main__table--data">
             <ul>
-                <li><button class="button__delete" type="button" data-delete>Delete</button></li>
+                <li><button class="button__delete" type="button" data-delete><i class="fas fa-trash"></i></button></li>
             </ul>
         </td>
     `
