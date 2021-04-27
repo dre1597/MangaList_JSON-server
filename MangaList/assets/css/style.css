@@ -1,22 +1,26 @@
 .header {
   font-family: "Pangolin", cursive;
   background-color: #610056;
-  height: 50px;
+  color: #dedede;
+  height: 3rem;
+}
+.header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #dedede;
+  width: 75%;
+  margin: 0 auto;
 }
-.header .nav__list {
+.header__nav--links {
+  margin: 1rem;
+}
+.header__nav--list {
   display: flex;
   justify-content: flex-start;
   align-items: space-between;
 }
-.header .nav__links {
-  margin: 20px 20px;
-}
 .header__input {
-  height: 40px;
+  height: 2.5rem;
   background: #dedede;
   color: #610056;
   margin-right: 1rem;
@@ -28,8 +32,8 @@ body {
 
 .main {
   background-color: #C9BEE0;
-  width: 90%;
-  margin: 20px auto 0 auto;
+  width: 75%;
+  margin: 1.5rem auto;
 }
 .main__table {
   color: #610056;
@@ -37,7 +41,7 @@ body {
 }
 .main__table--label {
   border: 2px solid #610056;
-  font-size: 25px;
+  font-size: 2rem;
   line-height: 1.5;
 }
 .main__table--row, .main__table--row-info {
@@ -45,10 +49,20 @@ body {
 }
 .main__table--data {
   border: 2px solid #610056;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.5;
 }
-.main .button__delete {
+.main__table--caps {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.main__table--options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main button {
   cursor: pointer;
 }
 

@@ -3,8 +3,8 @@ body
     
 .main 
     background-color: $color-light
-    width: 90%
-    margin: 20px auto 0 auto
+    width: 75%
+    margin: 1.5rem auto
 
     &__table
         color: $color-dark
@@ -12,7 +12,7 @@ body
 
         &--label
             border: 2px solid $color-dark
-            font-size: 25px
+            font-size: 2rem
             line-height: 1.5
 
         &--row, &--row-info
@@ -20,8 +20,18 @@ body
 
         &--data
             border: 2px solid $color-dark
-            font-size: 16px
+            font-size: 1rem
             line-height: 1.5
 
-    & .button__delete
+        &--caps
+            display: flex
+            justify-content: space-evenly
+            align-items: center
+
+        &--options
+            display: flex
+            justify-content: center
+            align-items: center
+
+    & button
         cursor: pointer
