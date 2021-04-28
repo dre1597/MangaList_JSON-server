@@ -1,10 +1,10 @@
 {
   "mangaJSON": [
     {
-      "mangaName": "Solo Leveling",
-      "status": "Ongoing",
+      "mangaName": "test",
+      "status": "test",
       "en": "11",
-      "ptbr": "111",
+      "ptbr": "11",
       "id": 1
     }
   ]

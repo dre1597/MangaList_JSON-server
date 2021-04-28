@@ -54,7 +54,7 @@ body {
 }
 .main__table--caps {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 .main__table--options {

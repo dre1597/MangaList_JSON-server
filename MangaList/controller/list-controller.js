@@ -29,7 +29,7 @@ export const createNewLine = (mangaName, status, en, ptbr, id) => {
         <td class="main__table--data">
             <ul class="main__table--options">
                 <li><a href="../views/update.html?id=${id}"><i class="fas fa-edit"></i></a></li>
-                <li><button class="button__delete" type="button" data-delete><i class="fas fa-trash"></i></button></li>
+                <li><button class="button__delete" type="button"><i class="fas fa-trash"></i></button></li>
             </ul>
         </td>
     `
@@ -41,13 +41,15 @@ export const createNewLine = (mangaName, status, en, ptbr, id) => {
 const table = document.querySelector('[data-table]')
 
 table.addEventListener('click', async (event) => {
-    let deleteButton = event.target.className == 'button__delete'
+    let deleteButton = event.target.closest('button').classList == 'button__delete'
 
     if(deleteButton){
 
         try{
             const line = event.target.closest('[data-id]')
+            console.log(line)
             let id = line.dataset.id
+            console.log(id)
             await listService.deleteManga(id)
             line.remove()
         }
