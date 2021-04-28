@@ -115,16 +115,6 @@ body {
   background-color: purple;
 }
 
-.error {
-  text-align: center;
-  font-size: 30px;
-  margin: 20px;
-  color: #610056;
-}
-.error h1 {
-  margin-bottom: 20px;
-}
-
 .hidden {
   display: none;
 }

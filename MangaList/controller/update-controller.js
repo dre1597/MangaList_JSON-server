@@ -3,7 +3,6 @@ import { listService } from '../service/list-service.js'
 ( async () => {
     
     const url = new URL(window.location)
-    
     const id = url.searchParams.get('id')
     
     const inputName = document.querySelector('[data-name]')
@@ -21,7 +20,6 @@ import { listService } from '../service/list-service.js'
     }
     catch(err){
         console.log(err)
-        window.location.href = "../views/error.html"
     }
 
     const form = document.querySelector('[data-form]')
@@ -35,7 +33,6 @@ import { listService } from '../service/list-service.js'
         }
         catch(err){
             console.log(err)
-            window.location.href = "../views/error.html"
-        } 
+        }
     })
 })()

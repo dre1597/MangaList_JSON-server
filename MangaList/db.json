@@ -3,9 +3,37 @@
     {
       "mangaName": "test",
       "status": "test",
-      "en": "11",
-      "ptbr": "11",
+      "en": "111",
+      "ptbr": "111",
       "id": 1
+    },
+    {
+      "mangaName": "test",
+      "status": "test",
+      "en": "111",
+      "ptbr": "111",
+      "id": 2
+    },
+    {
+      "mangaName": "test",
+      "status": "test",
+      "en": "111",
+      "ptbr": "111",
+      "id": 3
+    },
+    {
+      "mangaName": "teste",
+      "status": "test",
+      "en": "1111",
+      "ptbr": "111",
+      "id": 4
+    },
+    {
+      "mangaName": "test",
+      "status": "test",
+      "en": "111",
+      "ptbr": "111",
+      "id": 5
     }
   ]
 }

@@ -1,5 +1,3 @@
-import { listService } from '../service/list-service.js'
-
 export const createNewLine = (mangaName, status, en, ptbr, id) => {
 
     const newLine = document.createElement('tr')
@@ -38,43 +36,3 @@ export const createNewLine = (mangaName, status, en, ptbr, id) => {
     return newLine
 }
 
-const table = document.querySelector('[data-table]')
-
-table.addEventListener('click', async (event) => {
-    let deleteButton = event.target.closest('button').classList == 'button__delete'
-
-    if(deleteButton){
-
-        try{
-            const line = event.target.closest('[data-id]')
-            console.log(line)
-            let id = line.dataset.id
-            console.log(id)
-            await listService.deleteManga(id)
-            line.remove()
-        }
-        catch(err){
-            console.log(err)
-            window.location.href = "../views/error.html"
-        }
-
-    }
-})
-
-const render = async () => {
-
-    try{
-        const data = await listService.mangaList()
-
-        data.forEach(element => {
-            table.appendChild(createNewLine(element.mangaName, element.status, element.en, element.ptbr, element.id))
-        })
-    }
-    catch(err){
-        window.location.href = "../views/error.html"
-        console.log(err)
-    }
-    
-}
-
-render()

@@ -12,12 +12,10 @@ form.addEventListener('submit', async (event) => {
         const en = event.target.querySelector('[data-en]').value
         const ptbr = event.target.querySelector('[data-ptbr]').value
 
-        await listService.addManga(name, status, en, ptbr)
-            
+        await listService.addManga(name, status, en, ptbr)    
         window.location.href = "../views/list.html"
     }
     catch(err){
         console.log(err)
-        window.location.href = "../views/error.html"
     }
 })
