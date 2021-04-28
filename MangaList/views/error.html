@@ -10,14 +10,17 @@
 </head>
 <body>
     <header class="header">
-        <nav class="header_nav nav">
-            <ul class="nav__list">
-                <li class="nav__links"><a class="nav__link" href="./list.html">List</a></li>
-                <li class="nav__links"><a class="nav__link" href="./addNew.html">Add</a></li> 
-            </ul>
-        </nav>
+        <div class="header__container">
+            <nav class="header__nav">
+                <ul class="header__nav--list">
+                    <li class="header__nav--links"><a class="header__nav--link" href="./list.html">List</a></li>
+                    <li class="header__nav--links"><a class="header__nav--link" href="./addNew.html">Add</a></li> 
+                </ul>
+            </nav>
+            <input class="header__input" type="text" placeholder="Search..." data-search>
+        </div>
     </header>
-    <main >
+    <main>
         <section class="error">
             <h1>Something not working as expected</h1>
             <h2>Try again later</h2>
