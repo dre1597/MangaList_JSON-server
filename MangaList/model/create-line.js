@@ -10,8 +10,8 @@ export const createNewLine = (mangaName, status, en, ptbr, id) => {
             <div class="main__table--caps">
                 ${en}
                 <div class="main__table--buttons">
-                    <button type="button"><i class="fas fa-minus"></i></button>
-                    <button type="button"><i class="fas fa-plus"></i></button>
+                    <button type="button"><i class="fas fa-minus" class="button__minus"></i></button>
+                    <button type="button"><i class="fas fa-plus" class="button__plus"></i></button>
                 </div>
             </div>
         </td>
@@ -19,8 +19,8 @@ export const createNewLine = (mangaName, status, en, ptbr, id) => {
             <div class="main__table--caps">
                 ${ptbr}
                 <div class="main__table--buttons">
-                    <button type="button"><i class="fas fa-minus"></i></button>
-                    <button type="button"><i class="fas fa-plus"></i></button>
+                    <button type="button" class="button__minus"><i class="fas fa-minus"></i></button>
+                    <button type="button" class="button__plus"><i class="fas fa-plus"></i></button>
                 </div>
             </div>
         </td>

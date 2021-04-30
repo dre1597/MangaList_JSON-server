@@ -74,7 +74,6 @@ const updateManga = (id, mangaName, status, en, ptbr) => {
         if(response.ok) return response.json()
         throw new Error('Can\'t update the manga.')
 
-
     })
 
 }

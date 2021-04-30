@@ -11,6 +11,8 @@ searchArea.addEventListener('keyup', (event) => {
 
         let mangaName = tr[i].getElementsByClassName('manga-name').item(0).textContent.toLowerCase()
 
+        console.log(mangaName)
+
         if(!mangaName.includes(text)) tr[i].classList.add('hidden')
     }
 })

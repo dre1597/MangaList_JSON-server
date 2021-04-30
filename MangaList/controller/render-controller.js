@@ -1,5 +1,7 @@
 import { listService } from '../service/list-service.js'
 import { createNewLine } from '../model/create-line.js'
+import { deleteListener } from '../controller/delete-controller.js'
+
 const table = document.querySelector('[data-table]')
 
 const render = async () => {
@@ -10,6 +12,9 @@ const render = async () => {
         data.forEach(element => {
             table.appendChild(createNewLine(element.mangaName, element.status, element.en, element.ptbr, element.id))
         })
+        
+        deleteListener()
+
     } catch (err) {
         console.log(err)
     }
