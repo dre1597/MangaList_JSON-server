@@ -3,15 +3,15 @@
     {
       "mangaName": "test",
       "status": "test",
-      "en": "111",
-      "ptbr": "111",
+      "en": 114,
+      "ptbr": 112,
       "id": 3
     },
     {
       "mangaName": "test",
       "status": "test",
-      "en": "11",
-      "ptbr": "111",
+      "en": 12,
+      "ptbr": 112,
       "id": 4
     }
   ]
