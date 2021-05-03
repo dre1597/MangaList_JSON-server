@@ -12,4 +12,6 @@
 <p>npm install</p>
 <p>npx json-server --watch db.json </p><br>
 
+<p>This project is for use in VSCode with liveserver or the CORS gets you :/</p>
+<p>If you don't use VSCode you can install a browser-sync package or something like that </p>
 <p>Remember to use sudo if you are not using windows.</p>
