@@ -6,12 +6,11 @@ The ideia of the project is to improve my mangalist that I already have using ex
 
 I am also trying to put my codes in English, even that my English is not that good.<br>
 
-The JS part was based on a course called "JS na web: CRUD com JavaScript assíncrono" form Alura<br>
-
-https://cursos.alura.com.br/course/javascript-crud-assincrono
+The JS part was based on a course called "JS na web: CRUD com JavaScript assíncrono" form [Alura](https://cursos.alura.com.br/course/javascript-crud-assincrono).
 
 
 ## Technologies
+
 - HTML
 - Sass
 - JavaScript
@@ -19,6 +18,7 @@ https://cursos.alura.com.br/course/javascript-crud-assincrono
 - Live server extension on VS Code
 
 ## What I Wanted to improve with this project
+
 - Sass 
 - BEM methodology
 - MVC
@@ -27,17 +27,18 @@ https://cursos.alura.com.br/course/javascript-crud-assincrono
 - JSON as database
 
 ## Project setup
+
 ```
 npm install
 ```
 ```
 npx json-server --watch db.json 
 ```
-<br>
-<p>Remember to use sudo if you are not using windows.</p>
 
-<p>This project is for use in VSCode with liveserver or the CORS gets you :P</p>
 
-<p>If you don't use VSCode you can install a browser-sync package or something like that </p>
+Remember to use sudo if you are not using windows.
 
-<p>https://browsersync.io</p>
+This project is for use in VSCode with liveserver or the CORS gets you :P
+
+If you don't use VSCode you can install a [browser-sync](https://browsersync.io) package or something like that .
+
