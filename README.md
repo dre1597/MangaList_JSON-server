@@ -26,6 +26,11 @@ The JS part was based on a course called "JS na web: CRUD com JavaScript assínc
 - Async JavaScript
 - JSON as database
 
+## This to improve on the project
+
+- Show the list in alphabetic order
+- Put some buttons to order the list
+
 ## Project setup
 
 ```
