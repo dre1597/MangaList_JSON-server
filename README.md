@@ -8,7 +8,6 @@ I am also trying to put my codes in English, even that my English is not that go
 
 The JS part was based on a course called "JS na web: CRUD com JavaScript assíncrono" form [Alura](https://cursos.alura.com.br/course/javascript-crud-assincrono).
 
-
 ## Technologies
 
 - HTML
@@ -19,7 +18,7 @@ The JS part was based on a course called "JS na web: CRUD com JavaScript assínc
 
 ## What I Wanted to improve with this project
 
-- Sass 
+- Sass
 - BEM methodology
 - MVC
 - Fetch API
@@ -36,14 +35,13 @@ The JS part was based on a course called "JS na web: CRUD com JavaScript assínc
 ```
 npm install
 ```
-```
-npx json-server --watch db.json 
-```
 
+```
+npx json-server --watch db.json
+```
 
 Remember to use sudo if you are not using windows.
 
 This project is for use in VSCode with liveserver or the CORS gets you :P
 
 If you don't use VSCode you can install a [browser-sync](https://browsersync.io) package or something like that .
-

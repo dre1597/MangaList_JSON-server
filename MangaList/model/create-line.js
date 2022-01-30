@@ -1,9 +1,8 @@
 export const createNewLine = (mangaName, status, en, ptbr, id) => {
+  const newLine = document.createElement('tr');
+  newLine.classList.add('main__table--row-info');
 
-    const newLine = document.createElement('tr')
-    newLine.classList.add('main__table--row-info')
-
-    const content = `
+  const content = `
         <td class="main__table--data manga-name">${mangaName}</td>
         <td class="main__table--data ">${status}</td>
         <td class="main__table--data en">
@@ -30,9 +29,8 @@ export const createNewLine = (mangaName, status, en, ptbr, id) => {
                 <li><button class="button__delete" type="button"><i class="fas fa-trash"></i></button></li>
             </ul>
         </td>
-    `
-    newLine.innerHTML = content
-    newLine.dataset.id = id
-    return newLine
-}
-
+    `;
+  newLine.innerHTML = content;
+  newLine.dataset.id = id;
+  return newLine;
+};
